@@ -13,7 +13,7 @@ format: html
 ---
 
 ::: {.callout-important style="font-size: 0.8em;"}
-## Due: Tue, Mar 2, 2023 @ 11:59pm
+## Due: Thu, Mar 2, 2023 @ 11:59pm
 
 Please read the instructions carefully before submitting your assignment.
 
