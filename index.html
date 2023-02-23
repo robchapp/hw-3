@@ -372,8 +372,6 @@ Due: Thu, Mar 2, 2023 @ 11:59pm
 <p>Variable selection</p>
 </div>
 </div>
-<p>Load the <code>caret</code> library and store the names of the predictor variables (all columns except <code>quality</code>) in an object called <code>x_vars</code>.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>x_vars <span class="ot">&lt;-</span> <span class="fu">colnames</span>(df <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span>quality))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
 <section id="points-20" class="level6">
 <h6 class="anchored" data-anchor-id="points-20">4.1 (10 points)</h6>
@@ -382,8 +380,14 @@ Due: Thu, Mar 2, 2023 @ 11:59pm
 </section>
 <section id="points-21" class="level6">
 <h6 class="anchored" data-anchor-id="points-21">4.2 (20 points)</h6>
-<p>Use the <code>combn()</code> function (built-in R function) and the <code>make_formula()</code> (provided in the Appendix) to <strong>generate all possible linear regression formulas</strong> using the variables in <code>x_vars</code>.</p>
-<p>This is most optimally achieved using the <code>map()</code> function from the <code>purrr</code> package.</p>
+<p>Store the names of the predictor variables (all columns except <code>quality</code>) in an object called <code>x_vars</code>.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>x_vars <span class="ot">&lt;-</span> <span class="fu">colnames</span>(df <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span>quality))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Use:</p>
+<ul>
+<li>the <code>combn()</code> function (built-in R function) and</li>
+<li>the <code>make_formula()</code> (provided in the Appendix)</li>
+</ul>
+<p>to <strong>generate all possible linear regression formulas</strong> using the variables in <code>x_vars</code>. This is most optimally achieved using the <code>map()</code> function from the <code>purrr</code> package.</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>formulas <span class="ot">&lt;-</span> <span class="fu">map</span>(</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(x_vars),</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  \(x){</span>

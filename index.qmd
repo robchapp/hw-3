@@ -304,12 +304,6 @@ What is the difference between stepwise selection, LASSO and ridge based on you 
 Variable selection
 :::
 
-Load the `caret` library and store the names of the predictor variables (all columns except `quality`) in an object called `x_vars`.
-
-```R
-x_vars <- colnames(df %>% select(-quality))
-```
-
 ---
 
 ###### 4.1  (10 points)
@@ -321,10 +315,18 @@ Excluding `quality` from `df` we have $10$ possible predictors as the covariates
 
 ###### 4.2  (20 points)
 
+Store the names of the predictor variables (all columns except `quality`) in an object called `x_vars`.
 
-Use the `combn()` function (built-in R function) and the `make_formula()` (provided in the Appendix) to **generate all possible linear regression formulas** using the variables in `x_vars`.
+```R
+x_vars <- colnames(df %>% select(-quality))
+```
 
-This is most optimally achieved using the `map()` function from the `purrr` package.
+Use: 
+
+* the `combn()` function (built-in R function) and 
+* the `make_formula()` (provided in the Appendix) 
+
+to **generate all possible linear regression formulas** using the variables in `x_vars`. This is most optimally achieved using the `map()` function from the `purrr` package.
 
 ```R
 formulas <- map(
