@@ -184,7 +184,7 @@ Due: Thu, Mar 2, 2023 @ 11:59pm
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-30 points
+50 points
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -218,8 +218,8 @@ Due: Thu, Mar 2, 2023 @ 11:59pm
 <pre><code>[1] 6497   11</code></pre>
 <hr>
 </section>
-<section id="points-3" class="level5">
-<h5 class="anchored" data-anchor-id="points-3">1.3 (20 points)</h5>
+<section id="points-3" class="level6">
+<h6 class="anchored" data-anchor-id="points-3">1.3 (20 points)</h6>
 <p>Recall from STAT 200, the method to compute the <span class="math inline">\(t\)</span> statistic for the the difference in means (with the equal variance assumption)</p>
 <ol type="1">
 <li><p>Using <code>df</code> compute the mean of <code>quality</code> for red and white wine separately, and then store the difference in means as a variable called <code>diff_mean</code>.</p></li>
@@ -231,27 +231,27 @@ Due: Thu, Mar 2, 2023 @ 11:59pm
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">&lt;-</span>  ... <span class="co"># Insert your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
 </section>
-<section id="points-4" class="level5">
-<h5 class="anchored" data-anchor-id="points-4">1.4 (10 points)</h5>
+<section id="points-4" class="level6">
+<h6 class="anchored" data-anchor-id="points-4">1.4 (10 points)</h6>
 <p>Equivalently, R has a function called <code>t.test()</code> which enables you to perform a two-sample <span class="math inline">\(t\)</span>-Test without having to compute the pooled variance and difference in means.</p>
 <p>Perform a two-sample t-test to compare the quality of white and red wines using the <code>t.test()</code> function with the setting <code>var.equal=TRUE</code>. Store the t-statistic in <code>t2</code>.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>t_test <span class="ot">&lt;-</span> <span class="fu">t.test</span>(...) <span class="co"># Insert your code here</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>t2 <span class="ot">&lt;-</span> ... <span class="co"># Insert your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
 </section>
-<section id="points-5" class="level5">
-<h5 class="anchored" data-anchor-id="points-5">1.5 (5 points)</h5>
+<section id="points-5" class="level6">
+<h6 class="anchored" data-anchor-id="points-5">1.5 (5 points)</h6>
 <p>Fit a linear regression model to predict <code>quality</code> from <code>type</code> using the <code>lm()</code> function, and extract the <span class="math inline">\(t\)</span>-statistic for the <code>type</code> coefficient from the model summary. Store this <span class="math inline">\(t\)</span>-statistic in <code>t3</code>.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(...) <span class="co"># Insert your here</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>t3 <span class="ot">&lt;-</span> ... <span class="co"># Insert your here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
+</section>
 <section id="points-6" class="level6">
 <h6 class="anchored" data-anchor-id="points-6">1.6 (5 points)</h6>
 <p>Print a vector containing the values of <code>t1</code>, <code>t2</code>, and <code>t3</code>. What can you conclude from this? Why?</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(t1, t2, t3) <span class="co"># Insert your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br><br><br><br> <br><br><br><br></p>
 <hr>
-</section>
 </section>
 </section>
 <section id="question-2" class="level2">
@@ -262,7 +262,7 @@ Due: Thu, Mar 2, 2023 @ 11:59pm
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-40 points
+25 points
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -305,7 +305,7 @@ Due: Thu, Mar 2, 2023 @ 11:59pm
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-30 points
+40 points
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -365,7 +365,7 @@ Due: Thu, Mar 2, 2023 @ 11:59pm
 <i class="callout-icon"></i>
 </div>
 <div class="callout-caption-container flex-fill">
-30 points
+70 points
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -374,7 +374,7 @@ Due: Thu, Mar 2, 2023 @ 11:59pm
 </div>
 <hr>
 <section id="points-20" class="level6">
-<h6 class="anchored" data-anchor-id="points-20">4.1 (10 points)</h6>
+<h6 class="anchored" data-anchor-id="points-20">4.1 (5 points)</h6>
 <p>Excluding <code>quality</code> from <code>df</code> we have <span class="math inline">\(10\)</span> possible predictors as the covariates. How many different models can we create using any subset of these <span class="math inline">\(10\)</span> coavriates as possible predictors? Justify your answer.</p>
 <hr>
 </section>

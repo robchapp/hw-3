@@ -42,7 +42,7 @@ library(glmnet)
 
 ## Question 1
 ::: {.callout-tip}
-## 30 points
+## 50 points
 Regression with categorical covariate and $t$-Test
 :::
 
@@ -87,7 +87,7 @@ Your output to `R dim(df)` should be
 
 ---
 
-##### 1.3 (20 points)
+###### 1.3 (20 points)
 
 Recall from STAT 200, the method to compute the $t$ statistic for the the difference in means (with the equal variance assumption)
 
@@ -107,7 +107,7 @@ t1 <-  ... # Insert your code here
 
 ---
 
-##### 1.4 (10 points)
+###### 1.4 (10 points)
 
 Equivalently, R has a function called `t.test()` which enables you to perform a two-sample $t$-Test without having to compute the pooled variance and difference in means. 
 
@@ -120,7 +120,7 @@ t2 <- ... # Insert your code here
 
 ---
 
-##### 1.5 (5 points)
+###### 1.5 (5 points)
 
 Fit a linear regression model to predict `quality` from `type` using the `lm()` function, and extract the $t$-statistic for the `type` coefficient from the model summary. Store this $t$-statistic in `t3`.
 
@@ -149,7 +149,7 @@ c(t1, t2, t3) # Insert your code here
 
 ## Question 2
 ::: {.callout-tip}
-## 40 points
+## 25 points
 Collinearity
 :::
 
@@ -213,7 +213,7 @@ Compute the variance inflation factor (VIF) for each predictor in the full model
 
 ## Question 3
 ::: {.callout-tip}
-## 30 points
+## 40 points
 
 Variable selection
 :::
@@ -299,14 +299,14 @@ What is the difference between stepwise selection, LASSO and ridge based on you 
 
 ## Question 4
 ::: {.callout-tip}
-## 30 points
+## 70 points
 
 Variable selection
 :::
 
 ---
 
-###### 4.1  (10 points)
+###### 4.1  (5 points)
 
 Excluding `quality` from `df` we have $10$ possible predictors as the covariates. How many different models can we create using any subset of these $10$ coavriates as possible predictors? Justify your answer. 
 
