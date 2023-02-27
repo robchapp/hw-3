@@ -479,7 +479,7 @@ The `make_model_matrix` function below takes a `formula` as input and outputs a 
 
 ```R
 make_model_matrix <- function(formula){
-  X <- model.matrix(rsq_formula, df)[, -1]
+  X <- model.matrix(formula, df)[, -1]
   cnames <- colnames(X)
   for(i in 1:ncol(X)){
     if(!cnames[i] == "typewhite"){
